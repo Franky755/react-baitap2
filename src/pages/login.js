@@ -9,7 +9,7 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [confirmpassword, setConfirmPassword] = useState('');
 
   const handleChangeEmail = (event) => {
     setEmail(event.target.value)
@@ -28,7 +28,7 @@ function Login() {
     else if (password.length < 5) {
       alert("Password must be more than 5 digits >>__<< ");
     }
-    else if (password !== confirmPassword) {
+    else if (password !== confirmpassword) {
       alert("The password does not matched! =))) ");
     }
     else {
@@ -66,12 +66,12 @@ function Login() {
             required />
 
           <Input
-            value={confirmPassword }
+            value={confirmpassword }
             type="password"
             icon={<FontAwesomeIcon icon={faLock}></FontAwesomeIcon>}
             label="Confirm your password: "
             placeholder="Confirm the password"
-            confirmPassword=""
+            confirmpassword=""
             onChange={handleConfirmPassword}
             required />
 
