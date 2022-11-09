@@ -11,7 +11,7 @@ const Input = (props) => {
       value={props.value}
       onChange={props.onChange}
       required={props.required}
-      confirmPassword={props.confirmPassword}/>
+      confirmpassword={props.confirmpassword}/>
     </div>
   );
 }
