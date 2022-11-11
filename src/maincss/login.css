@@ -11,10 +11,16 @@ body{
 .container{
   background-image: linear-gradient(to right, #3742fa , #9b59b6);
   height: 100vh;
-
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* changeTheme */
+.light{
+  background-image: linear-gradient(to right, #be2edd, #f0932b);
+  position: absolute;
 }
 
 .form{
@@ -67,7 +73,7 @@ a{
 }
 
 button:hover{
-  background-color: #f1c40f;
+  background-color: #f6e58d;
   color: #000;
 
 }
