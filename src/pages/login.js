@@ -7,7 +7,7 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 import ThemeContext from "../context/ThemeConext";
 
 
-function Login() {
+function Login({ setIsOpenModal }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmpassword, setConfirmPassword] = useState('');
@@ -22,7 +22,7 @@ function Login() {
     setConfirmPassword(event.target.value)
   }
 
-  const themeValue= useContext(ThemeContext)
+  const themeValue = useContext(ThemeContext)
 
   const handleOnSubmit = (event) => {
     if (email.length === 0) {
@@ -35,7 +35,7 @@ function Login() {
       alert("The password does not matched! =))) ");
     }
     else {
-      alert("Login is sucessed! :) ");
+      setIsOpenModal(true)
     }
   }
 
@@ -57,10 +57,11 @@ function Login() {
             label="Email: "
             placeholder="Type your email"
             onChange={handleChangeEmail}
-            required />
+            required
+            autoFocus />
 
           <Input
-            value={password }
+            value={password}
             type="password"
             icon={<FontAwesomeIcon icon={faLock}></FontAwesomeIcon>}
             label="Password: "
@@ -69,7 +70,7 @@ function Login() {
             required />
 
           <Input
-            value={confirmpassword }
+            value={confirmpassword}
             type="password"
             icon={<FontAwesomeIcon icon={faLock}></FontAwesomeIcon>}
             label="Confirm your password: "

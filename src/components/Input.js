@@ -11,7 +11,8 @@ const Input = (props) => {
       value={props.value}
       onChange={props.onChange}
       required={props.required}
-      confirmpassword={props.confirmpassword}/>
+      confirmpassword={props.confirmpassword}
+      autoFocus={props.autoFocus}/>
     </div>
   );
 }

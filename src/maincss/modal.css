@@ -1,0 +1,85 @@
+.modal-container{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modal-content{
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 40px 30px;
+
+  border: 30px solid #8395a7;
+  border-radius: 10px;
+
+  text-align: center;
+  z-index: 1002;
+
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.hehe{
+  display: flex;
+  justify-content: end;
+
+  width: 100%;
+  right: 0;
+
+  bottom: 10px;
+
+  border-radius: 100%;
+  z-index: 4;
+}
+.hehe img{
+  width: 300px;
+}
+.modal-title{
+  color:#2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.modal-question{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn-modal{
+  width: 200px;
+  height: 2.5rem;
+
+  font-size: 1.5rem;
+  color: #fff;
+
+  border-radius: 5px;
+  border: 2px solid #130f40;
+}
+
+.btn-ok{
+  background-color: #f368e0;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.btn-no{
+  background-color: #2e86de;
+
+}
