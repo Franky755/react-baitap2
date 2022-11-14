@@ -3,10 +3,12 @@ import Login from './pages/login';
 import { useState } from 'react';
 import './App.css'
 import Modal from './pages/modal';
+import SignUp from './pages/signup';
 
 
 function App() {
   const [isOpenModal, setIsOpenModal] = useState(false)
+  const [isLoginSuccess, setIsLoginSuccess] = useState(false)
   const [theme, setTheme] = useState('dark')
 
   const handleChangeTheme = () => {
@@ -20,12 +22,19 @@ function App() {
           <button className='btn-change-theme' onClick={handleChangeTheme}> Change Background </button>
           <Login setIsOpenModal={setIsOpenModal} />
         </div>
-      </ThemeContext.Provider>
       {isOpenModal &&
         <div id="modal">
-          <Modal setIsOpenModal={setIsOpenModal} />
+          <Modal setIsOpenModal={setIsOpenModal} setIsLoginSuccess={setIsLoginSuccess} />
         </div>
       }
+      {isLoginSuccess &&
+        <div id='sign-up-success'>
+          <SignUp />
+        </div>
+      }
+
+      </ThemeContext.Provider>
+
     </>
 
   );

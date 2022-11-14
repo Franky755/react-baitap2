@@ -1,0 +1,25 @@
+.signup{
+  background-color: #70a1ff;
+  position: fixed;
+
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+
+  height: 20%;
+  width: 100%;
+
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 3;
+}
+
+.signup img{
+  left: calc(50%);
+  border-radius: 100%;
+}

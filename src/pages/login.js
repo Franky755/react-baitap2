@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import Input from "../components/Input";
-import login from '../maincss/login.css';
+import '../maincss/login.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
